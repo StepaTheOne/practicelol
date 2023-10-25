@@ -2,7 +2,7 @@
 
 body {
     background-color: #21325E;
-    padding: 2%;
+    padding:5%;
 }
 
 h1{
@@ -17,10 +17,15 @@ a {
     font-size: large;
 }
 
+.defText{
+    padding: 5%;
+    font-size: medium;
+}
+
 .cardPage {
     background-color: #3E497A;
-    border-radius: 20px;
-    padding: 20px;
+    border-radius: 5%;
+    padding: 10%;
     color: #F0F0F0;
     font-family: 'Comfortaa';
     font-weight: bold;

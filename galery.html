@@ -4,13 +4,16 @@
         <meta charset="utf-8">
         <title>Galery</title>
         <link rel="stylesheet" href="galery_style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet"> 
     </head>
     <body>
         <input type="text" id="searchTag" placeholder="#tag" class="search">
         <a class="btn" href="index.html">back to index</a>
-        <div class="galery">
+        <div class="galery" id="galery">
             <img src="images/cat1.jpg" data-tag="cat" class="gallery-item">
-            <img src="images/meme2.jpg" data-tag="meme" class="gallery-item">
+            <img src="images/meme2.jpg" data-tag="meme cat" class="gallery-item">
             <img src="images/meme1.jpg" data-tag="meme" class="gallery-item">
             <img src="images/cyberpunk1.jpg" data-tag="cyberpunk" class="gallery-item">
             <img src="images/cyberpunk2.webp" data-tag="cyberpunk" class="gallery-item">
@@ -18,7 +21,7 @@
 
         <script>
             var searchInput = document.getElementById("searchTag");
-            var images = document.getElementById("imageContainer").getElementsByTagName("img");
+            var images = document.getElementById("galery").getElementsByTagName("img");
 
             searchInput.addEventListener("input", function() {
             var tag = searchInput.value.toLowerCase();
